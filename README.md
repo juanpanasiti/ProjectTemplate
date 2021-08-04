@@ -10,6 +10,8 @@ And, of course, any suggestion is accepted.. you can email me to <juanpanasiti@g
 
 ## What I include in this template:
 * React Navigation
+    * Base instalation
+    * Stack Navigator
 * React Native Vecto Icons
 * Axios
 * Customized Icon

@@ -1,11 +1,24 @@
+import 'react-native-gesture-handler';
 import React from 'react';
-import { View, Text } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import MainStackNavigator from './src/navigators/MainStackNavigator';
+
+const AppState = ({ children }: any) => {
+    return (
+        <>
+            {/* App children */}
+            {children}
+        </>
+    );
+};
 
 const App = () => {
     return (
-        <View>
-            <Text>Hello World!</Text>
-        </View>
+        <NavigationContainer>
+            <AppState>
+                <MainStackNavigator />
+            </AppState>
+        </NavigationContainer>
     );
 };
 
